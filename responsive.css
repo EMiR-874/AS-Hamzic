@@ -315,9 +315,22 @@
     height: 78vh;
   }
   .brands {
-    gap: 35px;
+    gap: 20px;
+  }
+  .brands img:first-of-type {
+    display: none;
+  }
+  .brands img:nth-child(2) {
+    display: none;
+  }
+  .brands img:nth-child(3) {
+    display: none;
   }
 
+  .carding {
+    height: 60%;
+    width: 90%;
+  }
   .carding p:nth-child(2) {
     display: none;
   }
@@ -499,7 +512,7 @@
     min-height: 120vh;
   }
   .contact-left-title h1 {
-    font-size: 45px;
+    font-size: 50px;
   }
 }
 
@@ -556,6 +569,9 @@
 }
 
 @media (max-width: 345px) {
+  .brands {
+    gap: 10px;
+  }
   .service h1 {
     font-size: 60px;
   }

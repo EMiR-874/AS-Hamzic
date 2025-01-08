@@ -83,16 +83,20 @@ adjustText();
 
 const cards = document.querySelectorAll(".carding p");
 const contentWrapper = document.querySelector(".content-wrapper");
+const bradns = document.querySelector(".brands");
 
 cards.forEach((card) => {
   card.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent the event from propagating to the content-wrapper
-    cards.forEach((c) => c.classList.remove("active")); // Remove active from all <p>
-    card.classList.add("active"); // Add active to the clicked <p>
+    e.stopPropagation();
+    cards.forEach((c) => c.classList.remove("active"));
+    card.classList.add("active");
   });
 });
 
-// Add click event to content-wrapper to reset the active state
 contentWrapper.addEventListener("click", () => {
-  cards.forEach((card) => card.classList.remove("active")); // Remove active from all <p>
+  cards.forEach((card) => card.classList.remove("active"));
+});
+
+bradns.addEventListener("click", () => {
+  cards.forEach((card) => card.classList.remove("active"));
 });
