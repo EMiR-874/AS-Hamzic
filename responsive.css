@@ -498,6 +498,9 @@
   .apy-sty {
     min-height: 120vh;
   }
+  .contact-left-title h1 {
+    font-size: 45px;
+  }
 }
 
 @media (max-width: 375px) {
